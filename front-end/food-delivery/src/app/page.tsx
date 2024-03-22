@@ -1,5 +1,9 @@
+import { Login } from "@/Login/Login";
 import Image from "next/image";
-import { Header } from "@/components/Header";
-export default function Home() {
-  return <div></div>;
+export default function Home({ children }) {
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 }
