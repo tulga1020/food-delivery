@@ -8,7 +8,7 @@ import {
 } from "./Svg";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className="w-screen flex justify-center">
       <div className="w-[1440px] h-[545px] bg-[#18BA51] relative overflow-hidden">
@@ -49,3 +49,4 @@ export const Footer = () => {
     </div>
   );
 };
+export default Footer;

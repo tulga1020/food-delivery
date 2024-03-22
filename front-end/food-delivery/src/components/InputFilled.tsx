@@ -1,27 +1,30 @@
+"use client";
+
 import * as React from "react";
-import FormControl, { useFormControl } from "@mui/material/FormControl";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import FormHelperText from "@mui/material/FormHelperText";
+import Stack from "@mui/material/Stack";
+import TextField from "@mui/material/TextField";
+import { inputClasses } from "@mui/material";
 
-function MyFormHelperText() {
-  const { focused } = useFormControl() || {};
-
-  const helperText = React.useMemo(() => {
-    if (focused) {
-      return "This field is being focused";
-    }
-
-    return "Helper text";
-  }, [focused]);
-
-  return <FormHelperText>{helperText}</FormHelperText>;
-}
-
-export default function UseFormControl() {
+export const TextFieldHiddenLabel = (props: any) => {
+  const { placeholder, inputClasses } = props;
   return (
-    <form noValidate autoComplete="off">
-      {" "}
-      please input your email here
-    </form>
+    <Stack
+      component="form"
+      sx={{
+        width: "25ch",
+      }}
+      spacing={2}
+      noValidate
+      autoComplete="off"
+      className={inputClasses}
+    >
+      <TextField
+        hiddenLabel
+        id="filled-hidden-label-small"
+        placeholder={placeholder}
+        variant="filled"
+        size="small"
+      />
+    </Stack>
   );
-}
+};

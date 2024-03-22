@@ -3,7 +3,7 @@ import { SearchInput } from "./SearchInput";
 import { PineconeLogo } from "./Svg";
 import { Bucket } from "./Svg";
 import { ProfileLogo } from "./Svg";
-export const Header = () => {
+const Header = () => {
   return (
     <div className="bg-white w-screen ">
       <div className="max-w-[1280px] flex justify-between mx-auto my-4">
@@ -32,3 +32,4 @@ export const Header = () => {
     </div>
   );
 };
+export default Header;

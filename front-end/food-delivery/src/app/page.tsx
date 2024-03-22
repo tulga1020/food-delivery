@@ -1,9 +1,9 @@
-import { Login } from "@/Login/Login";
 import Image from "next/image";
-export default function Home({ children }) {
+
+export default function Home() {
   return (
-    <div>
-      <Login />
+    <div className="w-screen h-9/12 flex justify-center p-8">
+      Home compinent
     </div>
   );
 }
