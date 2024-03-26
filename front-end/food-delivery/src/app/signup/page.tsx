@@ -1,4 +1,9 @@
+import { SignupPage } from "@/components/SingupPage";
 const signup = () => {
-  return <></>;
+  return (
+    <div className="flex justify-center">
+      <SignupPage />
+    </div>
+  );
 };
 export default signup;
